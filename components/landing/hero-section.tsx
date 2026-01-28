@@ -15,29 +15,30 @@ export function HeroSection() {
   })
 
   // Parallax effects
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "150%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]) // Gentle zoom in
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]) // Slight vertical movement
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]) // Slower text movement
+  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]) // Extended fade out
 
   return (
     <section ref={containerRef} className="relative w-full h-[120vh] flex items-center justify-center overflow-hidden bg-black text-white">
 
       {/* Dynamic Wave Background */}
       <motion.div
-        style={{ y: bgY }}
-        className="absolute inset-0 z-0 overflow-hidden"
+        style={{ scale, y: bgY }}
+        className="absolute inset-0 z-0 overflow-hidden will-change-transform"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1510] via-[#2a241d] to-[#1a1510]" />
 
         {/* Wave 1 - Muted Accent */}
         <motion.div
-          className="absolute bottom-0 left-0 right-0 h-[60vh] opacity-30"
+          className="absolute bottom-0 left-0 right-0 h-[60vh] opacity-30 will-change-transform"
           animate={{
-            y: [0, -20, 0],
-            scale: [1, 1.05, 1],
+            y: [0, -15, 0],
+            scale: [1, 1.02, 1],
           }}
           transition={{
-            duration: 15,
+            duration: 12,
             repeat: Infinity,
             ease: "easeInOut"
           }}
@@ -49,16 +50,16 @@ export function HeroSection() {
 
         {/* Wave 2 - Primary Gold Accent */}
         <motion.div
-          className="absolute bottom-0 left-0 right-0 h-[50vh] opacity-40"
+          className="absolute bottom-0 left-0 right-0 h-[50vh] opacity-40 will-change-transform"
           animate={{
-            y: [0, 30, 0],
-            x: [0, -20, 0]
+            y: [0, 20, 0],
+            x: [0, -10, 0]
           }}
           transition={{
-            duration: 18,
+            duration: 15,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 0.5
           }}
         >
           <svg viewBox="0 0 1440 320" className="w-full h-full transform scale-125 origin-bottom" preserveAspectRatio="none">
@@ -68,16 +69,16 @@ export function HeroSection() {
 
         {/* Wave 3 - Soft Highlight */}
         <motion.div
-          className="absolute bottom-[-10%] left-0 right-0 h-[45vh] opacity-20 mixed-blend-overlay"
+          className="absolute bottom-[-10%] left-0 right-0 h-[45vh] opacity-20 mixed-blend-overlay will-change-transform"
           animate={{
-            y: [0, -40, 0],
-            scale: [1, 1.1, 1]
+            y: [0, -20, 0],
+            scale: [1, 1.05, 1]
           }}
           transition={{
-            duration: 22,
+            duration: 18,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 2
+            delay: 1
           }}
         >
           <svg viewBox="0 0 1440 320" className="w-full h-full transform scale-150 origin-bottom" preserveAspectRatio="none">

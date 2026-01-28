@@ -16,7 +16,7 @@ export function AboutSection() {
   // Dynamic Transformations for Luxury Art
   const rotateBig = useTransform(scrollYProgress, [0, 1], [0, 360])
   const rotateSmall = useTransform(scrollYProgress, [0, 1], [0, -180])
-  const yParallax = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"])
+  const yParallax = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]) // Reduced for smoother mobile feel
 
   return (
     <section id="about" ref={containerRef} className="w-full bg-[#F5F1E5] relative">
@@ -29,16 +29,16 @@ export function AboutSection() {
             {/* 1. The Golden Orbit - Dashed */}
             <motion.div
               style={{ rotate: rotateBig, opacity: 0.1 }}
-              className="absolute top-1/4 left-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-dashed border-[#C1945E] rounded-full"
+              className="absolute top-1/4 left-0 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] border border-dashed border-[#C1945E] rounded-full will-change-transform"
             />
             {/* 2. The Solid Meridian */}
             <motion.div
               style={{ rotate: rotateSmall, opacity: 0.15 }}
-              className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-[600px] h-[600px] border border-[#D4C0A3] rounded-full"
+              className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-[400px] h-[400px] md:w-[600px] md:h-[600px] border border-[#D4C0A3] rounded-full will-change-transform"
             />
             {/* Ambient Background */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#C1945E] rounded-full blur-[120px] opacity-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-[#C1945E] rounded-full blur-[80px] md:blur-[120px] opacity-10 will-change-transform" />
           </div>
 
           <div className="relative z-10 flex-grow flex flex-col justify-center">
