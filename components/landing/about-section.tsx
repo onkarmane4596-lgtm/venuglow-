@@ -49,7 +49,7 @@ export function AboutSection() {
               transition={{ duration: 0.8 }}
               className="mb-12"
             >
-              <span className="font-sans text-xs font-bold tracking-[0.3em] uppercase text-[#C1945E]">Est. 2024</span>
+              <span className="font-sans text-xs font-bold tracking-[0.3em] uppercase text-[#C1945E]"></span>
             </motion.div>
 
             {/* Main Title */}
