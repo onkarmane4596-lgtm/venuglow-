@@ -15,16 +15,14 @@ export function SocialProofSection() {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
             Follow Our Journey
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get inspired by new launches, behind-the-scenes content, and exclusive insights from the world of global lifestyle brands.
-          </p>
+          Get inspired by new launches, behind-the-scenes content, and exclusive insights from the world of global lifestyle brands
         </div>
 
         {/* Instagram feed preview grid */}
         <div className="mb-16 md:mb-24">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div 
+              <div
                 key={item}
                 className="aspect-square rounded-lg overflow-hidden bg-card border border-border group cursor-pointer"
               >
@@ -50,21 +48,21 @@ export function SocialProofSection() {
 
           {/* Social icons */}
           <div className="flex gap-4 justify-center mb-12">
-            <a 
+            <a
               href="#"
               className="p-4 rounded-lg border border-border hover:border-accent hover:bg-accent/10 transition-all duration-300 group"
             >
               <Instagram className="w-6 h-6 text-foreground group-hover:text-accent transition-colors" />
               <p className="text-xs mt-2 text-muted-foreground">Instagram</p>
             </a>
-            <a 
+            <a
               href="#"
               className="p-4 rounded-lg border border-border hover:border-accent hover:bg-accent/10 transition-all duration-300 group"
             >
               <Facebook className="w-6 h-6 text-foreground group-hover:text-accent transition-colors" />
               <p className="text-xs mt-2 text-muted-foreground">Facebook</p>
             </a>
-            <a 
+            <a
               href="#"
               className="p-4 rounded-lg border border-border hover:border-accent hover:bg-accent/10 transition-all duration-300 group"
             >
@@ -75,7 +73,7 @@ export function SocialProofSection() {
 
           {/* CTA */}
           <div className="inline-block">
-            <Button 
+            <Button
               size="lg"
               className="bg-foreground text-background hover:bg-foreground/90 px-8 py-6"
             >
@@ -85,7 +83,7 @@ export function SocialProofSection() {
 
           {/* Follower count placeholder */}
           <p className="text-sm text-muted-foreground mt-8">
-            <span className="font-semibold text-foreground">10K+</span> followers and growing | 
+            <span className="font-semibold text-foreground">10K+</span> followers and growing |
             <span className="font-semibold text-foreground ml-1">Daily</span> inspiration
           </p>
         </div>

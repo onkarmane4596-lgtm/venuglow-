@@ -61,7 +61,7 @@ export function AboutSection() {
             >
               <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9]">
                 About <br />
-                <span className="italic font-serif text-[#C1945E]">Us</span>.
+                <span className="italic font-serif text-[#C1945E]">Us</span>
               </h2>
               <div className="w-24 h-1 bg-[#C1945E] mt-8" />
             </motion.div>
@@ -78,9 +78,7 @@ export function AboutSection() {
                   <Target className="w-6 h-6 text-[#C1945E]" />
                   <h3 className="text-xl font-display font-bold text-[#F5F1E5]">Our Vision</h3>
                 </div>
-                <p className="text-[#D4C0A3] leading-relaxed text-lg max-w-md">
-                  To build globally trusted lifestyle brands from India, blending design, craftsmanship, and conscious sourcing into a singular standard of luxury.
-                </p>
+                To build globally trusted lifestyle brands from India, blending design, craftsmanship, and conscious sourcing into a singular standard of luxury
               </motion.div>
 
               {/* Mission */}
@@ -95,9 +93,9 @@ export function AboutSection() {
                 </div>
                 <ul className="space-y-4">
                   {[
-                    "Deliver uncompromising quality.",
-                    "Foster sustainable trade relationships.",
-                    "Celebrate Indian craftsmanship globally."
+                    "Deliver uncompromising quality",
+                    "Foster sustainable trade relationships",
+                    "Celebrate Indian craftsmanship globally"
                   ].map((m, i) => (
                     <li key={i} className="flex items-start gap-3 text-[#D4C0A3]">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#C1945E] mt-2.5" />
@@ -121,12 +119,8 @@ export function AboutSection() {
             transition={{ duration: 0.8 }}
           >
             <h3 className="text-sm font-bold tracking-[0.2em] text-[#9A8A75] uppercase mb-8">Who We Are</h3>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-[#4A3A28] font-display leading-tight font-medium">
-              <span className="text-[#C1945E]">VenusGlow Global Exports</span> is a premier curation house, bridging the gap between Indian artistry and the global marketplace.
-            </p>
-            <p className="mt-8 text-lg text-[#6B5A45] leading-relaxed max-w-2xl">
-              Operating as a dynamic proprietorship, we specialize in the sourcing, branding, and export of high-caliber lifestyle goods. From the spiritual resonance of semi-precious stones to the modern allure of fashion accessories, we deliver excellence without compromise.
-            </p>
+            <span className="text-[#C1945E]">VenusGlow Global Exports</span> is a premier curation house, bridging the gap between Indian artistry, domestic markets, and the global stage
+            Operating as a dynamic proprietorship, we specialize in the sourcing, branding, and distribution of high-caliber lifestyle goods. From the spiritual resonance of semi-precious stones to the modern allure of fashion accessories, we deliver excellence without compromise
           </motion.div>
 
           {/* Block 2: Scope (Nature of Business) */}
@@ -140,9 +134,9 @@ export function AboutSection() {
             <h3 className="text-sm font-bold tracking-[0.2em] text-[#9A8A75] uppercase mb-12">Nature of Business</h3>
             <ul className="grid gap-6">
               {[
-                { title: "Global Trader", desc: "Executing seamless cross-border commodity flow." },
-                { title: "Wholesale Supplier", desc: "Volume-based distribution for B2B partners." },
-                { title: "Direct Exporter", desc: "Compliant, documentation-ready international shipping." }
+                { title: "Domestic & Global Trader", desc: "Executing seamless commodity flow across India and international borders" },
+                { title: "Wholesale Supplier", desc: "Volume-based distribution for domestic retailers and B2B partners" },
+                { title: "Direct Exporter", desc: "Compliant, documentation-ready shipping for global destinations" }
               ].map((item, idx) => (
                 <li key={idx} className="group flex items-start gap-6 p-6 hover:bg-[#FEFEFE] rounded-2xl transition-colors duration-500 border border-transparent hover:border-[#E4DAC7] hover:shadow-sm">
                   <div className="pt-1">
@@ -188,7 +182,7 @@ export function AboutSection() {
             <div className="flex flex-col xl:flex-row items-center justify-between gap-8 text-center xl:text-left">
               <div>
                 <h3 className="text-2xl font-display font-bold text-[#4A3A28] mb-2">Ready to Collaborate?</h3>
-                <p className="text-[#9A8A75]">Join our network of global partners and retailers.</p>
+                <p className="text-[#9A8A75]">Join our network of global partners and retailers</p>
               </div>
               <Link href="#contact" className="w-full xl:w-auto">
                 <Button className="w-full xl:w-auto h-14 bg-[#C1945E] hover:bg-[#C1945E]/90 text-white rounded-full px-10 text-xs font-black uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl">

@@ -7,32 +7,32 @@ const reasons = [
   {
     icon: Layers,
     title: "Category-Focused Architecture",
-    desc: "Distinct brand identities for Wellness, Jewellery, and Fashion, allowing for targeted market positioning."
+    desc: "Distinct brand identities for Wellness, Jewellery, and Fashion, allowing for targeted market positioning"
   },
   {
     icon: Tag,
     title: "Private Labelling Options",
-    desc: "Comprehensive white-label solutions that allow you to market our premium products under your own brand name."
+    desc: "Comprehensive white-label solutions that allow you to market our premium products under your own brand name"
   },
   {
     icon: Globe,
     title: "Export-Ready Specifications",
-    desc: "Products manufactured to meet international quality standards and compliance requirements for global trade."
+    desc: "Products manufactured to meet international quality standards and compliance requirements for global trade"
   },
   {
     icon: Package,
     title: "Structured Packaging Solutions",
-    desc: "Professional, secure, and aesthetic packaging designed to ensure safety during transit and shelf appeal."
+    desc: "Professional, secure, and aesthetic packaging designed to ensure safety during transit and shelf appeal"
   },
   {
     icon: Sliders,
     title: "Flexible MOQs",
-    desc: "Adaptable Minimum Order Quantities designed to support both emerging retailers and established wholesale giants."
+    desc: "Adaptable Minimum Order Quantities designed to support both emerging retailers and established wholesale giants"
   },
   {
     icon: Briefcase,
     title: "Professional Communication",
-    desc: "Dedicated account management with clear timelines, transparent updates, and reliable delivery schedules."
+    desc: "Dedicated account management with clear timelines, transparent updates, and reliable delivery schedules"
   }
 ]
 
@@ -71,7 +71,7 @@ export function WhyChooseUsSection() {
             transition={{ delay: 0.2 }}
             className="text-[#6B5A45] text-lg font-light leading-relaxed"
           >
-            We don't just supply products; we build scalability into your business model through structured support and premium manufacturing.
+            We don't just supply products; we build scalability into your business model through structured support and premium manufacturing
           </motion.p>
         </div>
 

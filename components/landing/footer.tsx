@@ -24,16 +24,14 @@ export function Footer() {
               </Link>
               <div className="w-12 h-[1px] bg-[#C1945E]" />
             </div>
-            <p className="text-[11px] text-[#6B5A45] leading-loose font-medium font-sans max-w-xs uppercase tracking-widest">
-              A multi-brand export house delivering premium Indian lifestyle products across jewellery, wellness, and fashion categories.
-            </p>
+            A multi-brand export house delivering premium Indian lifestyle products across jewellery, wellness, and fashion categories
             <div className="flex gap-5">
               {[
-                { Icon: Instagram, href: "https://www.instagram.com/shobhajipawar/" },
-                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587148497847" },
-                { Icon: Linkedin, href: "https://www.linkedin.com/in/shobha-p-0060a63a8/" }
-              ].map(({ Icon, href }, idx) => (
-                <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className="p-3 bg-[#FEFEFE] border border-[#E4DAC7] text-[#9A8A75] hover:text-[#C1945E] hover:bg-[#C1945E]/10 transition-all rounded-full">
+                { Icon: Instagram, href: "https://www.instagram.com/shobhajipawar/", colorClass: "text-[#E1306C] bg-[#E1306C]/10 border-[#E1306C]/20" },
+                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587148497847", colorClass: "text-[#1877F2] bg-[#1877F2]/10 border-[#1877F2]/20" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/in/shobha-p-0060a63a8/", colorClass: "text-[#0A66C2] bg-[#0A66C2]/10 border-[#0A66C2]/20" }
+              ].map(({ Icon, href, colorClass }, idx) => (
+                <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className={`p-3 border transition-all rounded-full ${colorClass}`}>
                   <Icon className="w-4 h-4" />
                 </a>
               ))}
@@ -63,43 +61,54 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Corporate Links */}
+          {/* Domestic (India) */}
           <div className="space-y-6">
-            <h4 className="text-[10px] font-black text-[#4A3A28] uppercase tracking-[0.2em]">Our Presence</h4>
+            <h4 className="text-[10px] font-black text-[#4A3A28] uppercase tracking-[0.2em] flex items-center gap-2">
+              <MapPin className="w-3 h-3 text-[#C1945E]" />
+              Domestic (India)
+            </h4>
             <ul className="space-y-3 text-[10px] font-bold tracking-widest">
-              <li>
-                <Link href="#about" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
-                  Parent Overview
-                </Link>
+              <li className="text-[#6B5A45] font-sans font-normal text-xs mb-2">
+                Corporate Office: Maharashtra
               </li>
               <li>
-                <Link href="#export" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
-                  B2B Trade Desk
-                </Link>
+                <a href="mailto:info@venusglowglobal.com?subject=Domestic Enquiry" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
+                  Domestic Enquiries
+                </a>
               </li>
               <li>
                 <Link href="#contact" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
-                  Global Hub
+                  Partner With Us (India)
                 </Link>
               </li>
+
             </ul>
           </div>
 
-          {/* Contact Details */}
+          {/* Global (International) */}
           <div className="space-y-6">
-            <h4 className="text-[10px] font-black text-[#4A3A28] uppercase tracking-[0.2em]">Global Trade Desk</h4>
-            <ul className="space-y-4 font-sans font-light">
-              <li className="flex items-start gap-3 text-xs text-[#6B5A45]">
-                <MapPin className="w-4 h-4 text-[#C1945E] shrink-0" />
-                <span>Maharashtra, India <br /> Global Export Division</span>
+            <h4 className="text-[10px] font-black text-[#4A3A28] uppercase tracking-[0.2em] flex items-center gap-2">
+              <Globe className="w-3 h-3 text-[#C1945E]" />
+              Global (International)
+            </h4>
+            <ul className="space-y-3 text-[10px] font-bold tracking-widest">
+              <li className="text-[#6B5A45] font-sans font-normal text-xs mb-2">
+                Global Headquarters
               </li>
-              <li className="flex items-center gap-3 text-xs text-[#6B5A45]">
-                <Mail className="w-4 h-4 text-[#C1945E] shrink-0" />
-                <a href="mailto:info@venusglowglobal.com" className="hover:text-[#C1945E] transition-colors text-xs">info@venusglowglobal.com</a>
+              <li>
+                <Link href="#export" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
+                  Export Division
+                </Link>
               </li>
-              <li className="flex items-center gap-3 text-xs text-[#6B5A45]">
-                <Globe className="w-4 h-4 text-[#C1945E] shrink-0" />
-                <span>VenusGlow Global Export</span>
+              <li>
+                <a href="mailto:info@venusglowglobal.com?subject=Global Export Enquiry" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
+                  Global Enquiries
+                </a>
+              </li>
+              <li>
+                <Link href="#contact" className="text-[#9A8A75] hover:text-[#C1945E] transition-colors uppercase">
+                  International Trade
+                </Link>
               </li>
             </ul>
           </div>
@@ -108,13 +117,16 @@ export function Footer() {
         {/* Legal Bottom */}
         <div className="pt-10 border-t border-[#E4DAC7] flex flex-col md:grid md:grid-cols-2 justify-between items-center gap-6">
           <div className="space-y-2 text-center md:text-left">
-            <p className="text-[9px] font-bold text-[#9A8A75]/60 uppercase tracking-[0.3em]">
-              © {currentYear} VENUSGLOW GLOBAL BRANDS & EXPORTS. ALL RIGHTS RESERVED.
-            </p>
+            <div>
+              © {currentYear} VENUSGLOW GLOBAL EXPORTS. ALL RIGHTS RESERVED
+            </div>
+            <div className="text-[10px] text-[#9A8A75]/60 font-medium tracking-wider uppercase">
+              Powered by : <a href="http://techsarthiservices.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C1945E] transition-colors">Techsarthi</a>
+            </div>
           </div>
           <div className="flex gap-6 justify-center md:justify-end text-[9px] font-bold text-[#9A8A75]/60 uppercase tracking-[0.3em] font-sans">
-            <Link href="#" className="hover:text-[#C1945E] transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-[#C1945E] transition-colors">Trade Terms</Link>
+            <Link href="/privacy-policy" className="hover:text-[#C1945E] transition-colors">Privacy Policy</Link>
+            <Link href="/trade-terms" className="hover:text-[#C1945E] transition-colors">Trade Terms</Link>
           </div>
         </div>
       </div>

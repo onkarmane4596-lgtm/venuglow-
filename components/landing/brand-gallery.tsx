@@ -33,12 +33,10 @@ export function BrandGallery({ brandName, brandColor, products }: GalleryProps) 
                         {brandName} COLLECTION
                     </span>
                     <h3 className="font-display text-3xl md:text-5xl font-bold text-foreground tracking-tight">
-                        The Philosophy of <span className="italic font-light opacity-50">Craft</span>.
+                        The Philosophy of <span className="italic font-light opacity-50">Craft</span>
                     </h3>
                 </div>
-                <p className="max-w-md text-foreground/70 text-xs md:text-sm font-light leading-relaxed">
-                    Each piece in our {brandName.toLowerCase()} collection is a testament to the balance between natural raw energy and refined human artistry.
-                </p>
+                Each piece in our {brandName.toLowerCase()} collection is a testament to the balance between natural raw energy and refined human artistry
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -47,24 +45,27 @@ export function BrandGallery({ brandName, brandColor, products }: GalleryProps) 
                         key={product.id}
                         layoutId={product.id}
                         onClick={() => setSelectedProduct(product)}
-                        className="group cursor-pointer relative aspect-[4/5] overflow-hidden bg-foreground/[0.03] border border-foreground/5"
+                        className="group cursor-pointer relative"
                     >
-                        <Image
-                            src={product.image}
-                            alt={product.title}
-                            fill
-                            className="object-cover grayscale-[0.4] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000 ease-out"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-40" />
+                        <div className="relative aspect-[4/5] overflow-hidden bg-foreground/[0.03] border border-foreground/5 mb-6">
+                            <Image
+                                src={product.image}
+                                alt={product.title}
+                                fill
+                                className="object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
 
-                        <div className="absolute inset-0 p-8 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                            <h4 className="text-lg md:text-xl font-bold text-foreground mb-2">{product.title}</h4>
-                            <p className="text-[10px] text-primary font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-md border border-black/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-full shadow-sm transform translate-y-2 group-hover:translate-y-0">
+                                <Plus className="w-5 h-5 text-black" />
+                            </div>
+                        </div>
+
+                        <div className="text-center space-y-2">
+                            <h4 className="text-lg md:text-xl font-bold text-[#4A3A28] leading-tight group-hover:text-[#C1945E] transition-colors">{product.title}</h4>
+                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9A8A75] group-hover:text-[#C1945E] transition-colors">
                                 Explore Philosophy
                             </p>
-                            <div className="absolute top-6 right-6 w-10 h-10 bg-background/80 backdrop-blur-md border border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-none shadow-sm">
-                                <Plus className="w-5 h-5 text-foreground" />
-                            </div>
                         </div>
                     </motion.div>
                 ))}

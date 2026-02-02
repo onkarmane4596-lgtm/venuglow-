@@ -21,12 +21,8 @@ export function ContactSection() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="font-display text-4xl md:text-6xl font-bold text-[#4A3A28] leading-[1.1]">
-                Let's Build <br /> Something <span className="text-[#C1945E] italic">Exceptional</span>.
-              </h2>
-              <p className="text-base md:text-lg text-[#6B5A45] font-light leading-relaxed max-w-md">
-                Whether you're looking to source premium products or explore a global partnership, we invite your enquiry.
-              </p>
+              Let's Build <br /> Something <span className="text-[#C1945E] italic">Exceptional</span>
+              Whether you're looking to source premium products or explore a global partnership, we invite your enquiry
             </motion.div>
 
             {/* Social Links */}
@@ -58,11 +54,11 @@ export function ContactSection() {
                 <p className="text-[10px] font-bold text-[#9A8A75] uppercase tracking-widest mb-6">Follow Our Journey</p>
                 <div className="flex gap-4">
                   {[
-                    { Icon: Instagram, href: "https://www.instagram.com/shobhajipawar/" },
-                    { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587148497847" },
-                    { Icon: Linkedin, href: "https://www.linkedin.com/in/shobha-p-0060a63a8/" }
-                  ].map(({ Icon, href }, idx) => (
-                    <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className="p-4 bg-[#FEFEFE] border border-[#E4DAC7] rounded-xl text-[#9A8A75] hover:text-[#C1945E] hover:border-[#C1945E] transition-all">
+                    { Icon: Instagram, href: "https://www.instagram.com/shobhajipawar/", colorClass: "text-[#E1306C] border-[#E1306C]/30 hover:bg-[#E1306C]/5" },
+                    { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587148497847", colorClass: "text-[#1877F2] border-[#1877F2]/30 hover:bg-[#1877F2]/5" },
+                    { Icon: Linkedin, href: "https://www.linkedin.com/in/shobha-p-0060a63a8/", colorClass: "text-[#0A66C2] border-[#0A66C2]/30 hover:bg-[#0A66C2]/5" }
+                  ].map(({ Icon, href, colorClass }, idx) => (
+                    <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className={`p-4 bg-[#FEFEFE] border rounded-xl transition-all ${colorClass}`}>
                       <Icon className="w-5 h-5" />
                     </a>
                   ))}
@@ -89,9 +85,7 @@ export function ContactSection() {
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-[#4A3A28]">
                   Quick <span className="text-[#C1945E] italic">Enquiry</span>
                 </h3>
-                <p className="text-[#9A8A75] font-light leading-relaxed max-w-sm mx-auto">
-                  For personal purchases, custom orders, or quick questions about our collections, chat with us directly.
-                </p>
+                For personal purchases, custom orders, or quick questions about our collections, chat with us directly
               </div>
 
               <a
@@ -108,13 +102,13 @@ export function ContactSection() {
               </a>
 
               <p className="text-[10px] text-[#4A3A28]/30 font-bold uppercase tracking-widest">
-                Available Mon-Sat • 9 AM - 7 PM IST
+                available for 24/7
               </p>
             </div>
           </motion.div>
 
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }

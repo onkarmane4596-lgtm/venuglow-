@@ -10,7 +10,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-displa
 
 export const metadata: Metadata = {
   title: 'VenusGlow | Global Export Excellence',
-  description: 'A multi-brand export house delivering premium Indian lifestyle products across jewellery, wellness, and fashion categories.',
+  description: 'A multi-brand export house delivering premium Indian lifestyle products across jewellery, wellness, and fashion categories',
   generator: 'v0.app',
 }
 

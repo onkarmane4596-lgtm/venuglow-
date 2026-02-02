@@ -47,18 +47,14 @@ export function B2BSection() {
                                 <Globe className="w-4 h-4 text-[#C1945E]" />
                                 <span className="text-[10px] font-bold text-[#4A3A28] uppercase tracking-widest">Trade & Export Excellence</span>
                             </div>
-                            <h2 className="font-display text-4xl md:text-6xl font-bold text-[#4A3A28] leading-tight">
-                                Serious Supply <br /> for <span className="text-[#C1945E] italic">Global Partners</span>.
-                            </h2>
-                            <p className="text-base md:text-lg text-[#6B5A45] font-light leading-relaxed max-w-lg">
-                                We are fully export-ready with streamlined logistics and international quality compliance. Partner with us for reliable wholesale supply of premium Indian luxury goods.
-                            </p>
+                            Serious Supply <br /> for <span className="text-[#C1945E] italic">Domestic & Global Partners</span>
+                            We are fully equipped for both pan-India distribution and global exports, ensuring streamlined logistics and compliance. Partner with us for reliable wholesale supply of premium Indian luxury goods
                         </motion.div>
 
                         <div className="grid gap-8">
                             {[
-                                { icon: Package, title: "MOQ Flexibility", desc: "Adaptable order quantities tailored for both boutique retailers and large-scale distributors." },
-                                { icon: Zap, title: "Export Mastery", desc: "Fully compliant with international standards and documentation for frictionless global trade." }
+                                { icon: Package, title: "MOQ Flexibility", desc: "Adaptable order quantities tailored for both boutique retailers and large-scale distributors" },
+                                { icon: Zap, title: "Export Mastery", desc: "Fully compliant with international standards and documentation for frictionless global trade" }
                             ].map((item, idx) => (
                                 <motion.div
                                     key={idx}
@@ -100,14 +96,14 @@ export function B2BSection() {
                                         <CheckCircle className="w-10 h-10 text-[#C1945E]" />
                                     </div>
                                     <h3 className="text-2xl font-bold text-[#4A3A28]">Inquiry Received</h3>
-                                    <p className="text-[#9A8A75] font-light">Our trade desk will review your requirements and reach out within 24 hours.</p>
+                                    <p className="text-[#9A8A75] font-light">Our trade desk will review your requirements and reach out within 24 hours</p>
                                     <Button variant="outline" onClick={() => setSubmitted(false)} className="border-[#C1945E]/20 text-[#C1945E] hover:bg-[#C1945E] hover:text-white rounded-full px-8 py-6 transition-all duration-500">Send Another Enquiry</Button>
                                 </motion.div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="space-y-2">
-                                        <h3 className="text-2xl font-bold text-[#4A3A28] mb-1">Export Enquiry</h3>
-                                        <p className="text-[10px] text-[#C1945E] font-bold uppercase tracking-widest mb-6">Trade Desk Support</p>
+                                        <h3 className="text-2xl font-bold text-[#4A3A28] mb-1">Trade Enquiry</h3>
+                                        <p className="text-[10px] text-[#C1945E] font-bold uppercase tracking-widest mb-6">Domestic & Global Trade Desk Support</p>
                                     </div>
 
                                     <div className="grid grid-cols-2 gap-4">

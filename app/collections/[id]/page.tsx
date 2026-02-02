@@ -9,7 +9,7 @@ import { Footer } from '@/components/landing/footer'
 const collectionData = {
   'celestial-stones': {
     name: 'Celestial Stones',
-    description: 'Semi-precious stones and natural wellness products sourced from across India.',
+    description: 'Semi-precious stones and natural wellness products sourced from across India',
     accent: 'from-purple-500/20 to-purple-900/5',
     images: [
       {
@@ -52,7 +52,7 @@ const collectionData = {
   },
   'radiance': {
     name: 'Radiance',
-    description: 'Contemporary and traditional imitation jewellery pieces.',
+    description: 'Contemporary and traditional imitation jewellery pieces',
     accent: 'from-amber-500/20 to-amber-900/5',
     images: [
       {
@@ -95,7 +95,7 @@ const collectionData = {
   },
   'crafted-heritage': {
     name: 'Crafted Heritage',
-    description: 'Leather and lifestyle accessories with careful attention to detail.',
+    description: 'Leather and lifestyle accessories with careful attention to detail',
     accent: 'from-orange-500/20 to-orange-900/5',
     images: [
       {
@@ -240,7 +240,7 @@ export default function CollectionPage({ params }: { params: { id: string } }) {
             Interested in working with us?
           </h2>
           <p className="text-base text-muted-foreground max-w-xl mx-auto">
-            We're open to B2B partnerships, wholesale inquiries, and collaborations. Get in touch.
+            We're open to B2B partnerships, wholesale inquiries, and collaborations. Get in touch
           </p>
           <Link href="/#contact">
             <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90">

@@ -103,13 +103,13 @@ export function HeroSection() {
         >
           <span className="w-2 h-2 rounded-full bg-brand-zivara animate-pulse" />
           <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-white/90">
-            Premium Global Exports
+            Premium Domestic & Global Exports
           </span>
         </motion.div>
 
         {/* Headline with Staggered Reveal */}
-        <h1 className="font-display text-6xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter leading-[0.9] text-white mb-10 mix-blend-overlay">
-          <span className="block overflow-hidden">
+        <h1 className="font-display text-6xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter leading-[1.1] text-white mb-10 mix-blend-overlay">
+          <span className="block overflow-hidden pb-2">
             <motion.span
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
@@ -119,14 +119,14 @@ export function HeroSection() {
               Elevating Indian Luxury
             </motion.span>
           </span>
-          <span className="block overflow-hidden">
+          <span className="block overflow-hidden pb-2">
             <motion.span
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="block text-brand-zivara italic"
             >
-              for the World.
+              for India & the World
             </motion.span>
           </span>
         </h1>
@@ -137,7 +137,7 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
           className="text-lg md:text-2xl font-light text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
         >
-          Curating the finest <span className="text-white font-medium">Indian luxury</span> across jewellery, wellness, and fashion for the global stage.
+          Curating the finest <span className="text-white font-medium">Indian luxury</span> across jewellery, wellness, and fashion for domestic connoisseurs and the global stage
         </motion.p>
 
         {/* CTAs */}
